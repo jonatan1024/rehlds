@@ -328,6 +328,7 @@ public:
 	virtual sizebuf_t *GetMulticastBuf();
 	virtual sizebuf_t *GetSpectatorBuf();
 	virtual sizebuf_t *GetSignonBuf();
+	virtual void SetGameType(GameType_e gameType);
 };
 
 extern CGameClient** g_GameClients;
