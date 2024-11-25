@@ -235,6 +235,7 @@ typedef struct client_s
 	double m_lastvoicetime;
 	int m_sendrescount;
 	qboolean m_bSentNewResponse;
+	netsrc_t m_sock;
 } client_t;
 
 enum
@@ -624,5 +625,6 @@ char *SV_GetIDString(USERID_t *id);
 char *SV_GetIDString_internal(USERID_t *id);
 char *SV_GetClientIDString(client_t *client);
 int GetGameAppID(void);
+int GetGameAppIDByName(const char *gameName);
 qboolean IsGameSubscribed(const char *gameName);
 NOXREF qboolean BIsValveGame(void);

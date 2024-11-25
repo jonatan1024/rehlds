@@ -239,6 +239,7 @@ public:
 
 	virtual bool IsSentNewResponse();
 	virtual void SetSentNewResponse(bool state);
+	virtual const char* GetGame();
 
 public:
 	bool GetSpawnedOnce() const { return m_bSpawnedOnce; }
